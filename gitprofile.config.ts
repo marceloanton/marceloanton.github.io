@@ -72,7 +72,7 @@ const CONFIG = {
     title: 'Marcelo Ruben Anton | Soporte IT Senior y Desarrollo AI-Assisted',
     description:
       'Soporte IT Senior con mas de 15 anos de experiencia en infraestructura y desarrollo de sistemas internos en produccion con React, PHP y MySQL.',
-    imageURL: 'https://marceloanton.github.io/logo512.png',
+    imageURL: 'https://marceloanton.github.io/og-marcelo.svg',
   },
   social: {
     linkedin: 'marcelo-anton',
