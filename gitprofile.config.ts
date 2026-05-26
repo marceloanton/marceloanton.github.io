@@ -2,58 +2,68 @@
 
 const CONFIG = {
   github: {
-    username: 'marceloanton', // Your GitHub org/user name. (This is the only required config)
+    username: 'marceloanton',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: true,
+      header: 'Repositorios Destacados',
+      mode: 'manual',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'updated',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: true,
+          projects: ['marceloanton/marceloanton.github.io', 'marceloanton/marceloanton'],
         },
       },
       manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['marceloanton/MRASysCont', 'marceloanton/MRAdepartments', 'marceloanton/mrfitos', 'marceloanton/portfolio2', 'marceloanton/portfolio', 'marceloanton/TPFINAL'],
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'Proyectos en Produccion',
       projects: [
         {
-          title: 'Project Name',
+          title: 'MRAnalytics - CRM de Gestion de Cobranzas',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Sistema web multi-sede para rechazos de tarjeta, seguimiento de socios y recupero de deuda. KPIs en tiempo real, RBAC, auditoria, logs y notificaciones por WhatsApp/email. 18 usuarios activos.',
+          imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
+          link: 'https://app.manager.net.ar',
         },
         {
-          title: 'Project Name',
+          title: 'MRAnalytics POS - Punto de Venta',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'POS con stock por ubicacion, integracion Mercado Pago, turnos manana/noche, historial de caja, exportacion PDF y modulo de aptos medicos. Admin multi-sede independiente.',
+          imageUrl: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
+          link: 'https://pos.manager.net.ar',
+        },
+        {
+          title: 'Admin POS Multi-sede',
+          description:
+            'Panel administrativo centralizado para supervision operativa, configuracion de sedes y control integral del ecosistema POS.',
+          imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+          link: 'https://adminpos.manager.net.ar',
+        },
+        {
+          title: 'Web Medico - Gestion de Aptos y Turnos',
+          description:
+            'Aplicacion para medicos con cola diaria, refresco automatico cada 7 segundos, adjuntos, certificados y acceso por QR. Integrada al flujo del POS.',
+          imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80',
+          link: 'https://aptos.manager.net.ar',
         },
       ],
     },
   },
-  seo: { title: 'Portfolio of marceloanton', description: '', imageURL: '' },
+  seo: {
+    title: 'Marcelo Ruben Anton | Soporte IT Senior y Desarrollo AI-Assisted',
+    description:
+      'Soporte IT Senior con mas de 15 anos de experiencia en infraestructura y desarrollo de sistemas internos en produccion con React, PHP y MySQL.',
+    imageURL: '',
+  },
   social: {
-    linkedin: '',
+    linkedin: 'marcelo-anton',
     x: '',
     mastodon: '',
     researchGate: '',
@@ -61,170 +71,139 @@ const CONFIG = {
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     udemy: '',
     dribbble: '',
     behance: '',
     medium: '',
     dev: '',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    stackoverflow: '',
     discord: '',
     telegram: '',
-    website: '',
-    phone: '',
-    email: '',
+    website: 'marceloanton.online',
+    phone: '+5491158327633',
+    email: 'marceloanton@outlook.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '',
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
+    'Soporte IT N1/N2 corporativo',
+    'Administracion de sistemas e infraestructura',
+    'Redes TCP/IP, DNS, DHCP, NAT, VPN',
+    'Mikrotik: routing, firewall y VPN',
+    'LAN/WiFi/cableado estructurado',
+    'Microsoft 365: Exchange, Teams, SharePoint',
+    'Windows Server y Linux Ubuntu (basico/intermedio)',
+    'HubSpot CRM: tickets y SLA',
+    'React',
+    'PHP (API REST)',
     'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Integracion de APIs (WhatsApp, Mercado Pago, Email)',
+    'Exportacion PDF y procesamiento Excel/CSV',
+    'GitHub Copilot / OpenAI Codex / Claude (AI-assisted)',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'SportClub',
+      position: 'Soporte IT Senior y Desarrollo Interno',
+      from: '2024',
+      to: 'Actualidad',
+      companyLink: 'https://www.sportclub.com.ar',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Ing. Juan Aluiceti / ZHARAL',
+      position: 'Soporte IT',
+      from: '2014',
+      to: '2022',
+      companyLink: '',
+    },
+    {
+      company: 'Italgas S.A.',
+      position: 'Soporte Informatico Interno',
+      from: '2010',
+      to: '2013',
+      companyLink: '',
+    },
+    {
+      company: 'Grupo Solunet SRL',
+      position: 'Lider de Soporte Tecnico',
+      from: '2007',
+      to: '2010',
+      companyLink: '',
+    },
+    {
+      company: 'ISFD Ndeg44',
+      position: 'Ayudante de Catedra - Algoritmos I, II y III',
+      from: '2022',
+      to: '2024',
+      companyLink: '',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'UTN - Desarrollo Web Full Stack',
+      body: 'HTML, CSS, PHP, MySQL',
+      year: 'Finalizado',
+      link: '',
+    },
+    {
+      name: 'UTN - AutoCAD Proyectista',
+      body: 'Diseno y documentacion tecnica',
+      year: 'Finalizado',
+      link: '',
+    },
+    {
+      name: 'Image Campus - Modelado y Visualizacion 3D',
+      body: 'Modelado y pipeline visual',
+      year: 'Finalizado',
+      link: '',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'ISFD Ndeg44',
+      degree: 'Tecnicatura en Analisis de Sistemas (en curso, 1 materia pendiente)',
+      from: 'En curso',
+      to: 'Actualidad',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Resumen Profesional',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      journalName: 'Perfil',
+      authors: 'Marcelo Ruben Anton',
+      link: 'https://github.com/marceloanton',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Profesional IT con mas de 15 anos de experiencia en soporte tecnico N1/N2, redes e infraestructura en entornos corporativos. Disena y desarrolla sistemas internos en produccion con React, PHP y MySQL, utilizando flujo AI-assisted con GitHub Copilot, Codex y Claude para entregar soluciones operativas end-to-end orientadas a resultados.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Idiomas',
+      conferenceName: '',
+      journalName: 'Habilidades',
+      authors: 'Marcelo Ruben Anton',
+      link: '',
+      description: 'Espanol nativo e ingles tecnico para lectura y uso de documentacion.',
     },
   ],
-  // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: '', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    source: 'dev',
+    username: '',
+    limit: 0,
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '',
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
+    defaultTheme: 'corporate',
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'caramellatte',
-      'abyss',
-      'silk',
-      'procyon',
-    ],
+    themes: ['corporate', 'business', 'winter', 'light', 'dark'],
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
+  footer: `Marcelo Ruben Anton | Soporte IT Senior | Desarrollo y Automatizacion con IA`,
   enablePWA: true,
 };
 
