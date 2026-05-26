@@ -185,22 +185,12 @@ const CONFIG = {
   ],
   publications: [
     {
-      title: 'Resumen Profesional',
+      title: '',
       conferenceName: '',
-      journalName: 'Perfil',
-      authors: 'Marcelo Ruben Anton',
-      link: 'https://github.com/marceloanton',
-      description:
-        'Profesional IT con mas de 15 anos de experiencia en soporte tecnico N1/N2, redes e infraestructura en entornos corporativos. Disena y desarrolla sistemas internos en produccion con React, PHP y MySQL, utilizando flujo AI-assisted con GitHub Copilot, Codex y Claude para entregar soluciones operativas end-to-end orientadas a resultados.',
-    },
-    {
-      title: 'Idiomas',
-      conferenceName: '',
-      journalName: 'Habilidades',
-      authors: 'Marcelo Ruben Anton',
+      journalName: '',
+      authors: '',
       link: '',
-      description:
-        'Espanol nativo e ingles tecnico para lectura y uso de documentacion.',
+      description: '',
     },
   ],
   blog: {
@@ -213,11 +203,11 @@ const CONFIG = {
   },
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'corporate',
-    disableSwitch: false,
+    defaultTheme: 'dark',
+    disableSwitch: true,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-    themes: ['corporate', 'business', 'winter', 'light', 'dark'],
+    themes: ['dark', 'night', 'black', 'dracula', 'dim'],
   },
   footer: `Marcelo Ruben Anton | Soporte IT Senior | Desarrollo y Automatizacion con IA`,
   enablePWA: true,
