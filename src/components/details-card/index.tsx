@@ -182,14 +182,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {profile.location && (
                 <ListItem
                   icon={<MdLocationOn />}
-                  title="Based in:"
+                  title="Ubicacion:"
                   value={profile.location}
                 />
               )}
               {profile.company && (
                 <OrganizationItem
                   icon={<FaBuilding />}
-                  title="Organization:"
+                  title="Organizacion:"
                   value={profile.company}
                 />
               )}
@@ -322,7 +322,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.website && (
                 <ListItem
                   icon={<FaGlobe />}
-                  title="Website:"
+                  title="Sitio web:"
                   value={social.website
                     .replace('https://', '')
                     .replace('http://', '')}
@@ -344,7 +344,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.phone && (
                 <ListItem
                   icon={<RiPhoneFill />}
-                  title="Phone:"
+                  title="Telefono:"
                   value={social.phone}
                   link={`tel:${social.phone}`}
                 />
@@ -352,7 +352,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.email && (
                 <ListItem
                   icon={<RiMailFill />}
-                  title="Email:"
+                  title="Correo:"
                   value={social.email}
                   link={`mailto:${social.email}`}
                 />

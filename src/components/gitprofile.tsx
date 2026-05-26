@@ -106,8 +106,9 @@ const GitProfile = ({ config }: { config: Config }) => {
 
       setProfile({
         avatar: data.avatar_url,
-        name: data.name || ' ',
-        bio: data.bio || '',
+        name: sanitizedConfig.profile.name || data.name || ' ',
+        headline: sanitizedConfig.profile.headline || '',
+        bio: sanitizedConfig.profile.summary || data.bio || '',
         location: data.location || '',
         company: data.company || '',
       });
@@ -124,6 +125,9 @@ const GitProfile = ({ config }: { config: Config }) => {
     }
   }, [
     sanitizedConfig.github.username,
+    sanitizedConfig.profile.name,
+    sanitizedConfig.profile.headline,
+    sanitizedConfig.profile.summary,
     sanitizedConfig.projects.github.display,
     getGithubProjects,
   ]);

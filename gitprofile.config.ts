@@ -98,6 +98,13 @@ const CONFIG = {
     phone: '+5491158327633',
     email: 'marceloanton@outlook.com',
   },
+  profile: {
+    name: 'Marcelo Ruben Anton',
+    headline:
+      'Soporte IT Senior | Administracion de Sistemas | Desarrollo y Automatizacion con IA',
+    summary:
+      'Profesional IT con mas de 15 anos de experiencia en soporte tecnico corporativo, redes e infraestructura. Diseno y desarrollo sistemas internos en produccion con React, PHP y MySQL, integrando IA para resolver operaciones reales de punta a punta.',
+  },
   resume: {
     fileUrl: '/CV_Marcelo_Anton.pdf',
   },

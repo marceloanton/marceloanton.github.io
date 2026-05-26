@@ -68,7 +68,12 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               <span className="text-base-content">{profile.name}</span>
             )}
           </h5>
-          <div className="mt-3 text-base-content/70 text-sm leading-relaxed max-w-xs mx-auto">
+          {!loading && profile?.headline && (
+            <div className="mt-2 text-primary text-sm font-semibold tracking-wide">
+              {profile.headline}
+            </div>
+          )}
+          <div className="mt-3 text-base-content/70 text-sm leading-relaxed max-w-sm mx-auto">
             {loading || !profile
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
               : profile.bio}

@@ -215,6 +215,23 @@ interface Resume {
   fileUrl?: string;
 }
 
+interface CustomProfile {
+  /**
+   * Display name override
+   */
+  name?: string;
+
+  /**
+   * Professional headline under the name
+   */
+  headline?: string;
+
+  /**
+   * Professional summary paragraph
+   */
+  summary?: string;
+}
+
 interface Experience {
   company?: string;
   position?: string;
@@ -366,6 +383,11 @@ interface Config {
    * Resume
    */
   resume?: Resume;
+
+  /**
+   * Optional custom profile content
+   */
+  profile?: CustomProfile;
 
   /**
    * Google Analytics config
