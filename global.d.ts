@@ -243,6 +243,45 @@ interface CustomProfile {
    * Professional achievements
    */
   highlights?: Array<string>;
+
+  /**
+   * Case studies
+   */
+  caseStudies?: Array<{
+    title: string;
+    problem: string;
+    solution: string;
+    result: string;
+  }>;
+
+  /**
+   * Short testimonials
+   */
+  testimonials?: Array<{
+    quote: string;
+    author: string;
+    role?: string;
+  }>;
+
+  /**
+   * Languages block
+   */
+  languages?: Array<string>;
+
+  /**
+   * Availability short text
+   */
+  availability?: string;
+
+  /**
+   * Strong CTA text
+   */
+  cta?: string;
+
+  /**
+   * Meeting link (Calendly/WhatsApp Business)
+   */
+  meetingUrl?: string;
 }
 
 interface SkillGroup {

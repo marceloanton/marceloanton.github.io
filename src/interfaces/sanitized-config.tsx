@@ -78,6 +78,21 @@ export interface SanitizedProfile {
     value: string;
   }>;
   highlights?: Array<string>;
+  caseStudies?: Array<{
+    title: string;
+    problem: string;
+    solution: string;
+    result: string;
+  }>;
+  testimonials?: Array<{
+    quote: string;
+    author: string;
+    role?: string;
+  }>;
+  languages?: Array<string>;
+  availability?: string;
+  cta?: string;
+  meetingUrl?: string;
 }
 
 export interface SanitizedSkillGroup {

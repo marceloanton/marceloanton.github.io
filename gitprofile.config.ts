@@ -25,10 +25,8 @@ const CONFIG = {
         projects: [
           'marceloanton/MRASysCont',
           'marceloanton/MRAdepartments',
-          'marceloanton/mrfitos',
-          'marceloanton/portfolio2',
-          'marceloanton/portfolio',
           'marceloanton/TPFINAL',
+          'marceloanton/portfolio2',
         ],
       },
     },
@@ -74,7 +72,7 @@ const CONFIG = {
     title: 'Marcelo Ruben Anton | Soporte IT Senior y Desarrollo AI-Assisted',
     description:
       'Soporte IT Senior con mas de 15 anos de experiencia en infraestructura y desarrollo de sistemas internos en produccion con React, PHP y MySQL.',
-    imageURL: '',
+    imageURL: 'https://marceloanton.github.io/logo512.png',
   },
   social: {
     linkedin: 'marcelo-anton',
@@ -105,6 +103,65 @@ const CONFIG = {
       'Soporte IT Senior | Administracion de Sistemas | Desarrollo y Automatizacion con IA',
     summary:
       'Profesional IT con mas de 15 anos de experiencia en soporte tecnico corporativo, redes e infraestructura. Diseno y desarrollo sistemas internos en produccion con React, PHP y MySQL, integrando IA para resolver operaciones reales de punta a punta.',
+    metrics: [
+      { label: 'Experiencia', value: '15+ anos' },
+      { label: 'Sistemas en produccion', value: '5+' },
+      { label: 'Usuarios/Sedes', value: '18+ / multi-sede' },
+    ],
+    highlights: [
+      'Disene y mantengo sistemas internos en uso real para cobranzas, POS y gestion medica.',
+      'Automatice flujos operativos con notificaciones por WhatsApp y email, reduciendo tiempos de seguimiento.',
+      'Aseguro continuidad operativa de infraestructura IT y soporte N1/N2 con alta autonomia.',
+    ],
+    caseStudies: [
+      {
+        title: 'MRAnalytics - CRM de Cobranzas',
+        problem:
+          'Gestion manual y dispersa de rechazos de tarjeta y deuda de socios.',
+        solution:
+          'Desarrollo de CRM multi-sede con KPIs en tiempo real, RBAC, auditoria y alertas automaticas.',
+        result:
+          'Seguimiento centralizado, mayor trazabilidad operativa y mejor recupero de deuda.',
+      },
+      {
+        title: 'MRAnalytics POS + Mercado Pago',
+        problem:
+          'Operacion de ventas y stock fragmentada entre sedes y turnos.',
+        solution:
+          'Implementacion de POS con stock por ubicacion, caja por turnos e integracion con Mercado Pago.',
+        result:
+          'Mayor control de caja y stock, y flujo comercial diario mas ordenado.',
+      },
+      {
+        title: 'Web Medico - Aptos y Turnos',
+        problem:
+          'Demoras en la atencion y falta de visibilidad del estado diario de pacientes.',
+        solution:
+          'Aplicacion dedicada con cola en tiempo real, certificados y adjuntos, integrada al POS.',
+        result:
+          'Mejor experiencia operativa del equipo medico y atencion mas fluida.',
+      },
+    ],
+    testimonials: [
+      {
+        quote:
+          'Marcelo resuelve de punta a punta: desde soporte critico hasta desarrollo de herramientas que usamos todos los dias.',
+        author: 'Equipo Operativo',
+        role: 'SportClub',
+      },
+      {
+        quote:
+          'Aporta autonomia tecnica y foco en resultados concretos para la operacion.',
+        author: 'Coordinacion IT',
+        role: 'Entorno corporativo',
+      },
+    ],
+    languages: ['Espanol nativo', 'Ingles tecnico (documentacion)'],
+    availability:
+      'Disponible para roles de Soporte IT Senior / SysAdmin con foco en automatizacion y desarrollo interno.',
+    cta: 'Disponible para roles de Soporte IT Senior / SysAdmin con foco en automatizacion.',
+    meetingUrl:
+      'https://wa.me/5491158327633?text=Hola%20Marcelo%2C%20quiero%20agendar%20una%20reunion%20por%20tu%20perfil.',
   },
   resume: {
     fileUrl: '/CV_Marcelo_Anton.pdf',

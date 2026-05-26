@@ -28,6 +28,8 @@ import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
+import ExecutiveCard from './executive-card';
+import CaseStudyCard from './case-study-card';
 
 /**
  * Renders the GitProfile component.
@@ -217,6 +219,10 @@ const GitProfile = ({ config }: { config: Config }) => {
                     github={sanitizedConfig.github}
                     social={sanitizedConfig.social}
                   />
+                  <ExecutiveCard
+                    loading={loading}
+                    profile={sanitizedConfig.profile}
+                  />
                   {(sanitizedConfig.skills.length !== 0 ||
                     sanitizedConfig.skillGroups.length !== 0) && (
                     <SkillCard
@@ -235,19 +241,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                     <CertificationCard
                       loading={loading}
                       certifications={sanitizedConfig.certifications}
-                    />
-                  )}
-                  {!!sanitizedConfig.profile.highlights?.length && (
-                    <CertificationCard
-                      loading={loading}
-                      certifications={sanitizedConfig.profile.highlights.map(
-                        (item) => ({
-                          name: 'Logro',
-                          body: item,
-                          year: '',
-                          link: '',
-                        }),
-                      )}
                     />
                   )}
                   {sanitizedConfig.educations.length !== 0 && (
@@ -269,6 +262,10 @@ const GitProfile = ({ config }: { config: Config }) => {
                       googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
                     />
                   )}
+                  <CaseStudyCard
+                    loading={loading}
+                    profile={sanitizedConfig.profile}
+                  />
                   {sanitizedConfig.publications.length !== 0 && (
                     <PublicationCard
                       loading={loading}

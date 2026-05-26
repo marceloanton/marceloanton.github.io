@@ -78,6 +78,23 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
               : profile.bio}
           </div>
+          {!loading && profile?.metrics && profile.metrics.length > 0 && (
+            <div className="grid grid-cols-3 gap-2 mt-4 max-w-md mx-auto">
+              {profile.metrics.map((metric, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-lg border border-base-300/40 bg-base-200/60 p-2"
+                >
+                  <div className="text-sm font-bold text-base-content">
+                    {metric.value}
+                  </div>
+                  <div className="text-[11px] text-base-content/70">
+                    {metric.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
         {resumeFileUrl &&
           (loading ? (
