@@ -21,7 +21,7 @@ const SkillCard = ({
   };
 
   return (
-    <div className="card shadow-lg card-sm bg-base-100">
+    <div className="card shadow-lg card-sm bg-base-100 border border-base-300/40">
       <div className="card-body">
         <div className="mx-3">
           <h5 className="card-title">
@@ -34,12 +34,15 @@ const SkillCard = ({
             )}
           </h5>
         </div>
-        <div className="p-3 flow-root">
-          <div className="-m-1 flex flex-wrap justify-center gap-2">
+        <div className="p-3">
+          <div className="grid grid-cols-1 gap-2">
             {loading
               ? renderSkeleton()
               : skills.map((skill, index) => (
-                  <div key={index} className="badge badge-primary badge-sm">
+                  <div
+                    key={index}
+                    className="px-3 py-2 rounded-lg bg-primary/12 border border-primary/30 text-primary-content/90 text-sm leading-snug"
+                  >
                     {skill}
                   </div>
                 ))}
