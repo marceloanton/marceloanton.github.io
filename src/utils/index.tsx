@@ -90,8 +90,11 @@ export const getSanitizedConfig = (
         name: config?.profile?.name || '',
         headline: config?.profile?.headline || '',
         summary: config?.profile?.summary || '',
+        metrics: config?.profile?.metrics || [],
+        highlights: config?.profile?.highlights || [],
       },
       skills: config?.skills || [],
+      skillGroups: config?.skillGroups || [],
       experiences:
         config?.experiences?.filter(
           (experience) =>

@@ -109,6 +109,7 @@ const GitProfile = ({ config }: { config: Config }) => {
         name: sanitizedConfig.profile.name || data.name || ' ',
         headline: sanitizedConfig.profile.headline || '',
         bio: sanitizedConfig.profile.summary || data.bio || '',
+        metrics: sanitizedConfig.profile.metrics || [],
         location: data.location || '',
         company: data.company || '',
       });
@@ -128,6 +129,7 @@ const GitProfile = ({ config }: { config: Config }) => {
     sanitizedConfig.profile.name,
     sanitizedConfig.profile.headline,
     sanitizedConfig.profile.summary,
+    sanitizedConfig.profile.metrics,
     sanitizedConfig.projects.github.display,
     getGithubProjects,
   ]);
@@ -215,10 +217,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                     github={sanitizedConfig.github}
                     social={sanitizedConfig.social}
                   />
-                  {sanitizedConfig.skills.length !== 0 && (
+                  {(sanitizedConfig.skills.length !== 0 ||
+                    sanitizedConfig.skillGroups.length !== 0) && (
                     <SkillCard
                       loading={loading}
                       skills={sanitizedConfig.skills}
+                      skillGroups={sanitizedConfig.skillGroups}
                     />
                   )}
                   {sanitizedConfig.experiences.length !== 0 && (
@@ -231,6 +235,19 @@ const GitProfile = ({ config }: { config: Config }) => {
                     <CertificationCard
                       loading={loading}
                       certifications={sanitizedConfig.certifications}
+                    />
+                  )}
+                  {!!sanitizedConfig.profile.highlights?.length && (
+                    <CertificationCard
+                      loading={loading}
+                      certifications={sanitizedConfig.profile.highlights.map(
+                        (item) => ({
+                          name: 'Logro',
+                          body: item,
+                          year: '',
+                          link: '',
+                        }),
+                      )}
                     />
                   )}
                   {sanitizedConfig.educations.length !== 0 && (

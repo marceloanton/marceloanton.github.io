@@ -230,6 +230,24 @@ interface CustomProfile {
    * Professional summary paragraph
    */
   summary?: string;
+
+  /**
+   * Key metrics for hero
+   */
+  metrics?: Array<{
+    label: string;
+    value: string;
+  }>;
+
+  /**
+   * Professional achievements
+   */
+  highlights?: Array<string>;
+}
+
+interface SkillGroup {
+  title: string;
+  items: Array<string>;
 }
 
 interface Experience {
@@ -358,6 +376,7 @@ interface Config {
    * Skill list
    */
   skills?: Array<string>;
+  skillGroups?: Array<SkillGroup>;
 
   /**
    * Experience list

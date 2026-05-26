@@ -73,6 +73,16 @@ export interface SanitizedProfile {
   name?: string;
   headline?: string;
   summary?: string;
+  metrics?: Array<{
+    label: string;
+    value: string;
+  }>;
+  highlights?: Array<string>;
+}
+
+export interface SanitizedSkillGroup {
+  title: string;
+  items: Array<string>;
 }
 
 export interface SanitizedExperience {
@@ -138,6 +148,7 @@ export interface SanitizedConfig {
   resume: SanitizedResume;
   profile: SanitizedProfile;
   skills: Array<string>;
+  skillGroups: Array<SanitizedSkillGroup>;
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;

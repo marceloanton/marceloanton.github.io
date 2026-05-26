@@ -125,6 +125,44 @@ const CONFIG = {
     'Exportacion PDF y procesamiento Excel/CSV',
     'GitHub Copilot / OpenAI Codex / Claude (AI-assisted)',
   ],
+  skillGroups: [
+    {
+      title: 'Infraestructura y Redes',
+      items: [
+        'Administracion de sistemas e infraestructura',
+        'Redes TCP/IP, DNS, DHCP, NAT, VPN',
+        'Mikrotik: routing, firewall y VPN',
+        'LAN/WiFi/cableado estructurado',
+        'Windows Server y Linux Ubuntu (basico/intermedio)',
+      ],
+    },
+    {
+      title: 'Soporte Corporativo',
+      items: [
+        'Soporte IT N1/N2 corporativo',
+        'Microsoft 365: Exchange, Teams, SharePoint',
+        'HubSpot CRM: tickets y SLA',
+        'Soporte remoto y continuidad operativa multi-sede',
+      ],
+    },
+    {
+      title: 'Desarrollo de Sistemas',
+      items: [
+        'React',
+        'PHP (API REST)',
+        'MySQL',
+        'Integracion de APIs (WhatsApp, Mercado Pago, Email)',
+        'Exportacion PDF y procesamiento Excel/CSV',
+      ],
+    },
+    {
+      title: 'Automatizacion con IA',
+      items: [
+        'GitHub Copilot / OpenAI Codex / Claude (AI-assisted)',
+        'Flujos AI-first para desarrollo y resolucion operativa',
+      ],
+    },
+  ],
   experiences: [
     {
       company: 'SportClub',
