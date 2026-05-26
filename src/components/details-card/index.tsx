@@ -336,9 +336,9 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.telegram && (
                 <ListItem
                   icon={<FaTelegram />}
-                  title="Telegram"
-                  value={social.telegram}
-                  link={`https://t.me/${social.telegram}`}
+                  title="WhatsApp:"
+                  value="Contactar por WhatsApp"
+                  link={`https://wa.me/${social.telegram}`}
                 />
               )}
               {social?.phone && (

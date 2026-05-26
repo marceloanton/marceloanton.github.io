@@ -93,9 +93,10 @@ const CONFIG = {
     dev: '',
     stackoverflow: '',
     discord: '',
-    telegram: '',
+    telegram:
+      '5491158327633?text=Hola%20Marcelo%2C%20vi%20tu%20perfil%20en%20GitHub%20Pages.',
     website: 'marceloanton.online',
-    phone: '+5491158327633',
+    phone: '',
     email: 'marceloanton@outlook.com',
   },
   profile: {
