@@ -210,11 +210,11 @@ const CONFIG = {
   },
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'dark',
+    defaultTheme: 'executive',
     disableSwitch: true,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-    themes: ['dark', 'night', 'black', 'dracula', 'dim'],
+    themes: ['executive'],
   },
   footer: `Marcelo Ruben Anton | Soporte IT Senior | Desarrollo y Automatizacion con IA`,
   enablePWA: true,
