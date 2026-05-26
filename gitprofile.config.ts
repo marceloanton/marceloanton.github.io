@@ -93,7 +93,7 @@ const CONFIG = {
     discord: '',
     telegram:
       '5491158327633?text=Hola%20Marcelo%2C%20vi%20tu%20perfil%20en%20GitHub%20Pages.',
-    website: 'marceloanton.online',
+    website: 'https://marceloanton.github.io/',
     phone: '',
     email: 'marceloanton@outlook.com',
   },
