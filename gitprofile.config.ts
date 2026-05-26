@@ -85,7 +85,7 @@ const CONFIG = {
     email: 'marceloanton@outlook.com',
   },
   resume: {
-    fileUrl: '',
+    fileUrl: '/CV_Marcelo_Anton.pdf',
   },
   skills: [
     'Soporte IT N1/N2 corporativo',
