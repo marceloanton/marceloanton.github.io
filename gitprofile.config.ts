@@ -15,11 +15,21 @@ const CONFIG = {
         limit: 8,
         exclude: {
           forks: true,
-          projects: ['marceloanton/marceloanton.github.io', 'marceloanton/marceloanton'],
+          projects: [
+            'marceloanton/marceloanton.github.io',
+            'marceloanton/marceloanton',
+          ],
         },
       },
       manual: {
-        projects: ['marceloanton/MRASysCont', 'marceloanton/MRAdepartments', 'marceloanton/mrfitos', 'marceloanton/portfolio2', 'marceloanton/portfolio', 'marceloanton/TPFINAL'],
+        projects: [
+          'marceloanton/MRASysCont',
+          'marceloanton/MRAdepartments',
+          'marceloanton/mrfitos',
+          'marceloanton/portfolio2',
+          'marceloanton/portfolio',
+          'marceloanton/TPFINAL',
+        ],
       },
     },
     external: {
@@ -29,28 +39,32 @@ const CONFIG = {
           title: 'MRAnalytics - CRM de Gestion de Cobranzas',
           description:
             'Sistema web multi-sede para rechazos de tarjeta, seguimiento de socios y recupero de deuda. KPIs en tiempo real, RBAC, auditoria, logs y notificaciones por WhatsApp/email. 18 usuarios activos.',
-          imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
+          imageUrl:
+            'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
           link: 'https://app.manager.net.ar',
         },
         {
           title: 'MRAnalytics POS - Punto de Venta',
           description:
             'POS con stock por ubicacion, integracion Mercado Pago, turnos manana/noche, historial de caja, exportacion PDF y modulo de aptos medicos. Admin multi-sede independiente.',
-          imageUrl: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
+          imageUrl:
+            'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
           link: 'https://pos.manager.net.ar',
         },
         {
           title: 'Admin POS Multi-sede',
           description:
             'Panel administrativo centralizado para supervision operativa, configuracion de sedes y control integral del ecosistema POS.',
-          imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+          imageUrl:
+            'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
           link: 'https://adminpos.manager.net.ar',
         },
         {
           title: 'Web Medico - Gestion de Aptos y Turnos',
           description:
             'Aplicacion para medicos con cola diaria, refresco automatico cada 7 segundos, adjuntos, certificados y acceso por QR. Integrada al flujo del POS.',
-          imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80',
+          imageUrl:
+            'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80',
           link: 'https://aptos.manager.net.ar',
         },
       ],
@@ -163,7 +177,8 @@ const CONFIG = {
   educations: [
     {
       institution: 'ISFD Ndeg44',
-      degree: 'Tecnicatura en Analisis de Sistemas (en curso, 1 materia pendiente)',
+      degree:
+        'Tecnicatura en Analisis de Sistemas (en curso, 1 materia pendiente)',
       from: 'En curso',
       to: 'Actualidad',
     },
@@ -184,7 +199,8 @@ const CONFIG = {
       journalName: 'Habilidades',
       authors: 'Marcelo Ruben Anton',
       link: '',
-      description: 'Espanol nativo e ingles tecnico para lectura y uso de documentacion.',
+      description:
+        'Espanol nativo e ingles tecnico para lectura y uso de documentacion.',
     },
   ],
   blog: {
