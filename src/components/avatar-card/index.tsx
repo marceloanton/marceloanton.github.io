@@ -25,7 +25,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   resumeFileUrl,
 }): React.JSX.Element => {
   return (
-    <div className="card shadow-lg card-sm bg-base-100">
+    <div className="card shadow-lg card-sm bg-base-100 border border-base-300/40">
       <div className="grid place-items-center py-8">
         {loading || !profile ? (
           <div className="avatar opacity-90">
@@ -65,12 +65,10 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             {loading || !profile ? (
               skeleton({ widthCls: 'w-48', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">
-                {profile.name}
-              </span>
+              <span className="text-base-content">{profile.name}</span>
             )}
           </h5>
-          <div className="mt-3 text-base-content font-mono">
+          <div className="mt-3 text-base-content/70 text-sm leading-relaxed max-w-xs mx-auto">
             {loading || !profile
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
               : profile.bio}
@@ -85,11 +83,11 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             <a
               href={resumeFileUrl}
               target="_blank"
-              className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
+              className="btn btn-outline btn-sm text-xs mt-6"
               download
               rel="noreferrer"
             >
-              Download Resume
+              Descargar CV
             </a>
           ))}
       </div>

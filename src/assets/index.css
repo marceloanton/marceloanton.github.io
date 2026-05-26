@@ -78,10 +78,21 @@
 body {
   margin: 0;
   font-family:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    'Segoe UI', 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(
+      circle at top right,
+      color-mix(in oklab, var(--color-primary) 10%, transparent) 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      color-mix(in oklab, var(--color-secondary) 8%, transparent) 0%,
+      transparent 40%
+    ),
+    var(--color-base-200);
 }
 
 code {

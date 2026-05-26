@@ -65,26 +65,30 @@ const ListItem: React.FC<{
   skeleton?: boolean;
 }> = ({ icon, title, value, link, skeleton = false }) => {
   return (
-    <div className="flex justify-start py-2 px-1 items-center">
-      <div className="grow font-medium gap-2 flex items-center my-1">
+    <div className="flex justify-between py-2 px-1 items-start gap-3">
+      <div className="font-medium gap-2 flex items-center my-1 shrink-0">
         {icon} {title}
       </div>
       <div
         className={`${
           skeleton ? 'grow' : ''
-        } text-sm font-normal text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
+        } text-sm font-normal text-right min-w-0`}
         style={{
           wordBreak: 'break-word',
         }}
       >
-        <a
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          className="flex justify-start py-2 px-1 items-center"
-        >
-          {value}
-        </a>
+        {link ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            {value}
+          </a>
+        ) : (
+          <span>{value}</span>
+        )}
       </div>
     </div>
   );
@@ -94,9 +98,8 @@ const OrganizationItem: React.FC<{
   icon: React.ReactNode;
   title: React.ReactNode;
   value: React.ReactNode | string;
-  link?: string;
   skeleton?: boolean;
-}> = ({ icon, title, value, link, skeleton = false }) => {
+}> = ({ icon, title, value, skeleton = false }) => {
   const renderValue = () => {
     if (typeof value === 'string') {
       return value.split(' ').map((company) => {
@@ -123,14 +126,14 @@ const OrganizationItem: React.FC<{
   };
 
   return (
-    <div className="flex justify-start py-2 px-1 items-center">
-      <div className="grow font-medium gap-2 flex items-center my-1">
+    <div className="flex justify-between py-2 px-1 items-start gap-3">
+      <div className="font-medium gap-2 flex items-center my-1 shrink-0">
         {icon} {title}
       </div>
       <div
         className={`${
           skeleton ? 'grow' : ''
-        } text-sm font-normal text-right mr-2 ml-3 space-x-2 ${link ? 'truncate' : ''}`}
+        } text-sm font-normal text-right min-w-0 space-x-2`}
         style={{
           wordBreak: 'break-word',
         }}
@@ -169,7 +172,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
   };
 
   return (
-    <div className="card shadow-lg card-sm bg-base-100">
+    <div className="card shadow-lg card-sm bg-base-100 border border-base-300/40">
       <div className="card-body">
         <div className="text-base-content">
           {loading || !profile ? (
@@ -188,11 +191,6 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   icon={<FaBuilding />}
                   title="Organization:"
                   value={profile.company}
-                  link={
-                    isCompanyMention(profile.company.trim())
-                      ? companyLink(profile.company.trim())
-                      : undefined
-                  }
                 />
               )}
               <ListItem

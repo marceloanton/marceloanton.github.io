@@ -178,7 +178,7 @@ const GitProfile = ({ config }: { config: Config }) => {
   };
 
   return (
-    <div className="fade-in h-screen">
+    <div className="fade-in min-h-screen">
       {error ? (
         <ErrorPage
           status={error.status}
@@ -188,7 +188,7 @@ const GitProfile = ({ config }: { config: Config }) => {
       ) : (
         <>
           <div className={`p-4 lg:p-10 min-h-full ${BG_COLOR}`}>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
               <div className="col-span-1">
                 <div className="grid grid-cols-1 gap-6">
                   {!sanitizedConfig.themeConfig.disableSwitch && (
